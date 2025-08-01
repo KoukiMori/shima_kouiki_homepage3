@@ -22,15 +22,21 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
+    // Aria1を先に表示
     Future.delayed(const Duration(milliseconds: 300), () {
       setState(() {
         _aria1Opacity = 1.0;
-        _aria2Opacity = 1.0;
-        _aria3Opacity = 1.0;
-        _aria4Opacity = 1.0;
-        _aria2Offset = Offset.zero;
-        _aria3Offset = Offset.zero;
-        _aria4Offset = Offset.zero;
+      });
+      // Aria1のアニメーションが終わった後にAria2~4を表示
+      Future.delayed(const Duration(seconds: 2), () {
+        setState(() {
+          _aria2Opacity = 1.0;
+          _aria3Opacity = 1.0;
+          _aria4Opacity = 1.0;
+          _aria2Offset = Offset.zero;
+          _aria3Offset = Offset.zero;
+          _aria4Offset = Offset.zero;
+        });
       });
     });
   }
