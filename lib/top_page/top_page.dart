@@ -12,6 +12,9 @@ class TopPage extends StatefulWidget {
 
 class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
   double _aria1Opacity = 0.0;
+  double _aria2Opacity = 0.0;
+  double _aria3Opacity = 0.0;
+  double _aria4Opacity = 0.0;
   Offset _aria2Offset = const Offset(0, -0.2); // Aria2: 上から下
   Offset _aria3Offset = const Offset(0, 0.2); // Aria3: 下から上
   Offset _aria4Offset = const Offset(0, -0.2); // Aria4: 上から下
@@ -22,6 +25,9 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
     Future.delayed(const Duration(milliseconds: 300), () {
       setState(() {
         _aria1Opacity = 1.0;
+        _aria2Opacity = 1.0;
+        _aria3Opacity = 1.0;
+        _aria4Opacity = 1.0;
         _aria2Offset = Offset.zero;
         _aria3Offset = Offset.zero;
         _aria4Offset = Offset.zero;
@@ -370,28 +376,33 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
                                       offset: _aria2Offset,
                                       duration: const Duration(seconds: 2),
                                       curve: Curves.easeOut,
-                                      child: Stack(
-                                        alignment: AlignmentDirectional.center,
-                                        children: [
-                                          Image.asset(
-                                            'assets/images/tomoyamaBG.png',
-                                          ),
-                                          Text(
-                                            'と\nも\nや\nま\n苑',
-                                            style: GoogleFonts.notoSerifJp(
-                                              fontSize: size.width * .04,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.white,
-                                              shadows: [
-                                                Shadow(
-                                                  offset: Offset(2, 2),
-                                                  blurRadius: 4.0,
-                                                  color: Colors.black,
-                                                ),
-                                              ],
+                                      child: AnimatedOpacity(
+                                        opacity: _aria2Opacity,
+                                        duration: const Duration(seconds: 2),
+                                        child: Stack(
+                                          alignment:
+                                              AlignmentDirectional.center,
+                                          children: [
+                                            Image.asset(
+                                              'assets/images/tomoyamaBG.png',
                                             ),
-                                          ),
-                                        ],
+                                            Text(
+                                              'と\nも\nや\nま\n苑',
+                                              style: GoogleFonts.notoSerifJp(
+                                                fontSize: size.width * .04,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.white,
+                                                shadows: [
+                                                  Shadow(
+                                                    offset: Offset(2, 2),
+                                                    blurRadius: 4.0,
+                                                    color: Colors.black,
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -402,28 +413,33 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
                                       offset: _aria3Offset,
                                       duration: const Duration(seconds: 2),
                                       curve: Curves.easeOut,
-                                      child: Stack(
-                                        alignment: AlignmentDirectional.center,
-                                        children: [
-                                          Image.asset(
-                                            'assets/images/sainiwaBG.png',
-                                          ),
-                                          Text(
-                                            '才\n庭\n寮',
-                                            style: GoogleFonts.notoSerifJp(
-                                              fontSize: size.width * .04,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.white,
-                                              shadows: [
-                                                Shadow(
-                                                  offset: Offset(2, 2),
-                                                  blurRadius: 4.0,
-                                                  color: Colors.black,
-                                                ),
-                                              ],
+                                      child: AnimatedOpacity(
+                                        opacity: _aria3Opacity,
+                                        duration: const Duration(seconds: 2),
+                                        child: Stack(
+                                          alignment:
+                                              AlignmentDirectional.center,
+                                          children: [
+                                            Image.asset(
+                                              'assets/images/sainiwaBG.png',
                                             ),
-                                          ),
-                                        ],
+                                            Text(
+                                              '才\n庭\n寮',
+                                              style: GoogleFonts.notoSerifJp(
+                                                fontSize: size.width * .04,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.white,
+                                                shadows: [
+                                                  Shadow(
+                                                    offset: Offset(2, 2),
+                                                    blurRadius: 4.0,
+                                                    color: Colors.black,
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -434,28 +450,32 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
                                       offset: _aria4Offset,
                                       duration: const Duration(seconds: 2),
                                       curve: Curves.easeOut,
-                                      child: Stack(
-                                        alignment: AlignmentGeometry.center,
-                                        children: [
-                                          Image.asset(
-                                            'assets/images/hanazonoBG.png',
-                                          ),
-                                          Text(
-                                            '花\n園\n寮e',
-                                            style: GoogleFonts.notoSerifJp(
-                                              fontSize: size.width * .04,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.white,
-                                              shadows: [
-                                                Shadow(
-                                                  offset: Offset(2, 2),
-                                                  blurRadius: 4.0,
-                                                  color: Colors.black,
-                                                ),
-                                              ],
+                                      child: AnimatedOpacity(
+                                        opacity: _aria4Opacity,
+                                        duration: const Duration(seconds: 2),
+                                        child: Stack(
+                                          alignment: AlignmentGeometry.center,
+                                          children: [
+                                            Image.asset(
+                                              'assets/images/hanazonoBG.png',
                                             ),
-                                          ),
-                                        ],
+                                            Text(
+                                              '花\n園\n寮',
+                                              style: GoogleFonts.notoSerifJp(
+                                                fontSize: size.width * .04,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.white,
+                                                shadows: [
+                                                  Shadow(
+                                                    offset: Offset(2, 2),
+                                                    blurRadius: 4.0,
+                                                    color: Colors.black,
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
