@@ -186,8 +186,7 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
                                                             size.width *
                                                             .07, // 大きいサイズ
                                                         fontFamily:
-                                                            GoogleFonts.notoSerifJp()
-                                                                .fontFamily, // 必要ならフォントも指定
+                                                            'NotoSerifJP', // 必要ならフォントも指定
                                                       ),
                                                     ),
                                                     TextSpan(
@@ -197,8 +196,7 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
                                                             size.width *
                                                             .03, // 小さいサイズ
                                                         fontFamily:
-                                                            GoogleFonts.notoSerifJp()
-                                                                .fontFamily, // 必要ならフォントも指定
+                                                            'NotoSerifJP', // 必要ならフォントも指定
                                                       ),
                                                     ),
                                                   ],
@@ -209,36 +207,36 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
                                                   children: [
                                                     TextSpan(
                                                       text: '志摩',
-                                                      style:
-                                                          GoogleFonts.notoSerifJp(
-                                                            fontSize:
-                                                                size.width *
-                                                                .04,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                          ),
+                                                      style: TextStyle(
+                                                        fontSize:
+                                                            size.width * .04,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        fontFamily:
+                                                            'NotoSerifJP',
+                                                      ),
                                                     ),
                                                     TextSpan(
                                                       text: 'の',
-                                                      style:
-                                                          GoogleFonts.notoSerifJp(
-                                                            fontSize:
-                                                                size.width *
-                                                                .02,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                          ),
+                                                      style: TextStyle(
+                                                        fontSize:
+                                                            size.width * .02,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        fontFamily:
+                                                            'NotoSerifJP',
+                                                      ),
                                                     ),
                                                     TextSpan(
                                                       text: '介護',
-                                                      style:
-                                                          GoogleFonts.notoSerifJp(
-                                                            fontSize:
-                                                                size.width *
-                                                                .04,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                          ),
+                                                      style: TextStyle(
+                                                        fontSize:
+                                                            size.width * .04,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        fontFamily:
+                                                            'NotoSerifJP',
+                                                      ),
                                                     ),
                                                   ],
                                                 ),
@@ -246,16 +244,18 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
 
                                               Text(
                                                 'ここから',
-                                                style: GoogleFonts.notoSerifJp(
+                                                style: TextStyle(
                                                   fontSize: size.width * .02,
                                                   fontWeight: FontWeight.bold,
+                                                  fontFamily: 'NotoSerifJP',
                                                 ),
                                               ),
                                               Text(
                                                 '始まりました',
-                                                style: GoogleFonts.notoSerifJp(
+                                                style: TextStyle(
                                                   fontSize: size.width * .02,
                                                   fontWeight: FontWeight.bold,
+                                                  fontFamily: 'NotoSerifJP',
                                                 ),
                                               ),
                                               SizedBox(height: 20),
@@ -264,73 +264,73 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
                                                 children: [
                                                   Text(
                                                     '私たちは、',
-                                                    style:
-                                                        GoogleFonts.notoSerifJp(
-                                                          fontSize:
-                                                              size.width * .01,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                                    style: TextStyle(
+                                                      fontSize:
+                                                          size.width * .01,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontFamily: 'NotoSerifJP',
+                                                    ),
                                                   ),
                                                   Text(
                                                     '志摩市で最初に設立された',
-                                                    style:
-                                                        GoogleFonts.notoSerifJp(
-                                                          fontSize:
-                                                              size.width * .01,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                                    style: TextStyle(
+                                                      fontSize:
+                                                          size.width * .01,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontFamily: 'NotoSerifJP',
+                                                    ),
                                                   ),
                                                   Text(
                                                     '介護施設として、',
-                                                    style:
-                                                        GoogleFonts.notoSerifJp(
-                                                          fontSize:
-                                                              size.width * .01,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                                    style: TextStyle(
+                                                      fontSize:
+                                                          size.width * .01,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontFamily: 'NotoSerifJP',
+                                                    ),
                                                   ),
                                                   Text(
                                                     '地域の皆さまと歩んできました。',
-                                                    style:
-                                                        GoogleFonts.notoSerifJp(
-                                                          fontSize:
-                                                              size.width * .01,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                                    style: TextStyle(
+                                                      fontSize:
+                                                          size.width * .01,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontFamily: 'NotoSerifJP',
+                                                    ),
                                                   ),
                                                   Text(
                                                     '長年の経験と実績をもとに、',
-                                                    style:
-                                                        GoogleFonts.notoSerifJp(
-                                                          fontSize:
-                                                              size.width * .01,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                                    style: TextStyle(
+                                                      fontSize:
+                                                          size.width * .01,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontFamily: 'NotoSerifJP',
+                                                    ),
                                                   ),
                                                   Text(
                                                     'これからも安心とぬくもりの',
-                                                    style:
-                                                        GoogleFonts.notoSerifJp(
-                                                          fontSize:
-                                                              size.width * .01,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                                    style: TextStyle(
+                                                      fontSize:
+                                                          size.width * .01,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontFamily: 'NotoSerifJP',
+                                                    ),
                                                   ),
                                                   Text(
                                                     '介護を提供してまいります。',
-                                                    style:
-                                                        GoogleFonts.notoSerifJp(
-                                                          fontSize:
-                                                              size.width * .01,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                                    style: TextStyle(
+                                                      fontSize:
+                                                          size.width * .01,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontFamily: 'NotoSerifJP',
+                                                    ),
                                                   ),
                                                 ],
                                               ),
@@ -394,7 +394,7 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
                                             ),
                                             Text(
                                               'と\nも\nや\nま\n苑',
-                                              style: GoogleFonts.notoSerifJp(
+                                              style: TextStyle(
                                                 fontSize: size.width * .04,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.white,
@@ -405,6 +405,7 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
                                                     color: Colors.black,
                                                   ),
                                                 ],
+                                                fontFamily: 'NotoSerifJP',
                                               ),
                                             ),
                                           ],
@@ -431,7 +432,7 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
                                             ),
                                             Text(
                                               '才\n庭\n寮',
-                                              style: GoogleFonts.notoSerifJp(
+                                              style: TextStyle(
                                                 fontSize: size.width * .04,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.white,
@@ -442,6 +443,7 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
                                                     color: Colors.black,
                                                   ),
                                                 ],
+                                                fontFamily: 'NotoSerifJP',
                                               ),
                                             ),
                                           ],
@@ -467,7 +469,7 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
                                             ),
                                             Text(
                                               '花\n園\n寮',
-                                              style: GoogleFonts.notoSerifJp(
+                                              style: TextStyle(
                                                 fontSize: size.width * .04,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.white,
@@ -478,6 +480,7 @@ class _TopPageState extends State<TopPage> with SingleTickerProviderStateMixin {
                                                     color: Colors.black,
                                                   ),
                                                 ],
+                                                fontFamily: 'NotoSerifJP',
                                               ),
                                             ),
                                           ],
